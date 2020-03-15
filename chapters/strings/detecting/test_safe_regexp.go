@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"regexp"
+	"strings"
+)
 
 func main() {
-	fmt.Println("unimplemented")
+	chars := []string{"\\]", "\\^", "\\-", "\\\\", "\\[", "\\.", "\\(", "\\)"}
+	r := strings.Join(chars, "")
+	s := "[Some]-\\(string)^."
+	re := regexp.MustCompile("[" + r + "]+")
+	s = re.ReplaceAllString(s, "")
+	fmt.Println(s)
 }

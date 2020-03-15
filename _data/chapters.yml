@@ -16,10 +16,8 @@
   recipes:
   - title: Concatenating Strings
     path: /chapters/strings/concatenation
-    wip: true
   - title: Detecting a Substring
     path: /chapters/strings/detecting
-    wip: true
   - title: Detecting All Substrings
     path: /chapters/strings/detecting-all
     wip: true

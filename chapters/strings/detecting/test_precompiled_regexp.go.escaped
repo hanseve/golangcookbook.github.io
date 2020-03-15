@@ -1,7 +1,14 @@
 package main
 
-import &quot;fmt&quot;
+import (
+	&quot;fmt&quot;
+	&quot;regexp&quot;
+)
 
 func main() {
-	fmt.Println(&quot;unimplemented&quot;)
+	re, err := regexp.Compile(&quot;(?i)Wo.*&quot;) //case insensitive
+	fmt.Println(re.MatchString(&quot;Hello world&quot;), err)
+
+	re = regexp.MustCompile(&quot;(?i)Wo.*&quot;)
+	fmt.Println(re.MatchString(&quot;Hello world&quot;))
 }

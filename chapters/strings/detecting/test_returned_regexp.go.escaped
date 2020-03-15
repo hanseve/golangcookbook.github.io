@@ -1,7 +1,19 @@
 package main
 
-import &quot;fmt&quot;
+import (
+	&quot;fmt&quot;
+	&quot;regexp&quot;
+)
 
 func main() {
-	fmt.Println(&quot;unimplemented&quot;)
+	re := regexp.MustCompile(&quot;a.&quot;)
+	fmt.Println(re.FindAllString(&quot;paranormal&quot;, -1))
+	fmt.Println(re.FindAllString(&quot;paranormal&quot;, 2))
+	fmt.Println(re.FindString(&quot;paranormal&quot;))
+	fmt.Println(re.FindAllString(&quot;graal&quot;, -1))
+	fmt.Println(re.FindAllString(&quot;none&quot;, -1))
+
+	re = regexp.MustCompile(`a(x*)b(y|z)c`)
+	fmt.Printf(&quot;%q\n&quot;, re.FindStringSubmatch(&quot;-axxxbyc-&quot;))
+	fmt.Printf(&quot;%q\n&quot;, re.FindStringSubmatch(&quot;-abzc-&quot;))
 }

@@ -1,7 +1,16 @@
 package main
 
-import &quot;fmt&quot;
+import (
+	&quot;fmt&quot;
+	&quot;regexp&quot;
+	&quot;strings&quot;
+)
 
 func main() {
-	fmt.Println(&quot;unimplemented&quot;)
+	chars := []string{&quot;\\]&quot;, &quot;\\^&quot;, &quot;\\-&quot;, &quot;\\\\&quot;, &quot;\\[&quot;, &quot;\\.&quot;, &quot;\\(&quot;, &quot;\\)&quot;}
+	r := strings.Join(chars, &quot;&quot;)
+	s := &quot;[Some]-\\(string)^.&quot;
+	re := regexp.MustCompile(&quot;[&quot; + r + &quot;]+&quot;)
+	s = re.ReplaceAllString(s, &quot;&quot;)
+	fmt.Println(s)
 }

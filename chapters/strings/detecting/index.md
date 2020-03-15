@@ -19,10 +19,14 @@ Go prides itself on being a low level language with a rich set of functionality 
 {% include example.html example="regexp" %}
 
 ### Finding Matched Strings
+There are 16 methods of Regexp that match a regular expression and identify the matched text. Their names are matched by this regular expression:
+`Find(All)?(String)?(Submatch)?(Index)?`
+
 
 {% include example.html example="returned_regexp" %}
 
 ### Detecting Patterns that Include Special Characters
+Use backslash `\\` to escape special characters, such as, `(` `[` `-` `{` 
 
 {% include example.html example="safe_regexp" %}
 
