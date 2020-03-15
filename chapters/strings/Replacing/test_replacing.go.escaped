@@ -1,0 +1,13 @@
+package main
+
+import (
+	&quot;fmt&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	fmt.Println(strings.Replace(&quot;oink oink oink&quot;, &quot;k&quot;, &quot;ky&quot;, 2))
+	fmt.Println(strings.Replace(&quot;oink oink oink&quot;, &quot;oink&quot;, &quot;moo&quot;, -1))
+
+	fmt.Println(strings.ReplaceAll(&quot;oink oink oink&quot;, &quot;oink&quot;, &quot;moo&quot;))
+}

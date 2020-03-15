@@ -22,7 +22,6 @@
     path: /chapters/strings/detecting-all
   - title: Accessing Substrings
     path: /chapters/strings/accessing
-    wip: true
   - title: Processing a String One Word or Character at a Time
     path: /chapters/strings/processing
   - title: Processing a String by Complex Separators and Patterns
@@ -30,7 +29,7 @@
   - title: Reversing a String by Word or Character
     path: /chapters/strings/reverse
   - title: Replacing Parts of a String
-    path: false
+    path: /chapters/strings/replacing
   - title: Expanding and Compressing Tabs
     path: false
   - title: Expanding Variables in User Input

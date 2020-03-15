@@ -1,0 +1,18 @@
+package main
+
+import (
+	&quot;fmt&quot;
+	&quot;regexp&quot;
+)
+
+func main() {
+	re := regexp.MustCompile(&quot;a(x*)b&quot;)
+	fmt.Println(re.ReplaceAllString(&quot;-ab-axxb-&quot;, &quot;T&quot;))
+	fmt.Println(re.ReplaceAllString(&quot;-ab-axxb-&quot;, &quot;$1&quot;)) //$1 represents the text of first submatch
+	fmt.Println(re.ReplaceAllString(&quot;-ab-axxb-&quot;, &quot;$1W&quot;))
+	fmt.Println(re.ReplaceAllString(&quot;-ab-axxb-&quot;, &quot;${1}W&quot;))
+
+	fmt.Println(re.ReplaceAllLiteralString(&quot;-ab-axxb-&quot;, &quot;T&quot;))
+	fmt.Println(re.ReplaceAllLiteralString(&quot;-ab-axxb-&quot;, &quot;$1&quot;)) //$1 has no special meaning
+	fmt.Println(re.ReplaceAllLiteralString(&quot;-ab-axxb-&quot;, &quot;${1}&quot;))
+}

@@ -7,7 +7,16 @@ Go allows you to access parts of a string via the normal indexing primitives you
 
 Here are some examples:
 
+-  `mystring[n:m]`
+
 {% include example.html example="index" %}
+
+---
+
+- `FindStringSubmatch()`
+
+{% include example.html example="submatch" %}
+
 
 Accessing strings by character, word or token are covered in the [Processing a String One Word or Character at a Time](/chapters/strings/processing) recipe.
 
