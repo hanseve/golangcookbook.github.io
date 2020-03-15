@@ -8,4 +8,4 @@ question: How do I gather a list of all substrings matching a pattern?
 * `regexp.FindAllString`
 * `regexp.FindAllStringIndex`
 
-
+{% include example.html example="detect_all" %}

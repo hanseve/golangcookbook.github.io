@@ -20,7 +20,6 @@
     path: /chapters/strings/detecting
   - title: Detecting All Substrings
     path: /chapters/strings/detecting-all
-    wip: true
   - title: Accessing Substrings
     path: /chapters/strings/accessing
     wip: true

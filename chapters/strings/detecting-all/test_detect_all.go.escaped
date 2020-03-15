@@ -1,0 +1,17 @@
+package main
+
+import (
+	&quot;fmt&quot;
+	&quot;regexp&quot;
+)
+
+func main()  {
+	re := regexp.MustCompile(`a.`)
+	fmt.Println(re.FindAllString(&quot;paranormal&quot;, -1))
+	fmt.Println(re.FindAllString(&quot;paranormal&quot;, 2))
+	fmt.Println(re.FindAllString(&quot;paranormal&quot;, 1))
+
+	fmt.Println(re.FindAllStringIndex(&quot;paranormal&quot;, -1))
+	fmt.Println(re.FindAllStringIndex(&quot;paranormal&quot;, 2))
+	fmt.Println(re.FindAllStringIndex(&quot;paranormal&quot;, 1))
+}
