@@ -1,0 +1,10 @@
+package main
+
+import &quot;fmt&quot;
+
+func main() {
+	bs := make([]byte, 20)
+	n := copy(bs, &quot;Hello&quot;)
+	copy(bs[n:], &quot; world&quot;)
+	fmt.Println(string(bs))
+}

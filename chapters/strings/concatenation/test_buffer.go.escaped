@@ -1,0 +1,13 @@
+package main
+
+import (
+	&quot;bytes&quot;
+	&quot;fmt&quot;
+)
+
+func main() {
+	var str bytes.Buffer
+	str.WriteString(&quot;Hello&quot;)
+	str.WriteString(&quot; world&quot;)
+	fmt.Println(str.String())
+}

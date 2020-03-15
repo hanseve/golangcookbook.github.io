@@ -1,0 +1,12 @@
+package main
+
+import (
+	&quot;fmt&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	str3 := []string{&quot;Hello&quot;}
+	str3 = append(str3, &quot; world&quot;)
+	fmt.Println(strings.Join(str3, &quot;&quot;))
+}

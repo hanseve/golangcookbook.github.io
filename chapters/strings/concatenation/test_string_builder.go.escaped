@@ -1,0 +1,13 @@
+package main
+
+import (
+	&quot;strings&quot;
+	&quot;fmt&quot;
+)
+
+func main() {
+	var str2 strings.Builder
+	str2.WriteString(&quot;Hello &quot;)
+	str2.WriteString(&quot;world&quot;)
+	fmt.Println(str2.String())
+}
