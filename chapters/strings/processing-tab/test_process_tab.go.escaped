@@ -1,0 +1,17 @@
+package main
+
+import (
+	&quot;fmt&quot;
+	&quot;regexp&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	fmt.Printf(&quot;%q\n&quot;,strings.ReplaceAll(&quot;oink\toink\toink&quot;, &quot;\t&quot;, &quot;&quot;))
+	fmt.Printf(&quot;%q\n&quot;,strings.ReplaceAll(&quot;foo foo foo&quot;, &quot; &quot;, &quot;\t&quot;))
+
+	re := regexp.MustCompile(&quot;\t&quot;)
+	fmt.Printf(&quot;%q\n&quot;,re.ReplaceAllString(&quot;oink\toink\toink&quot;, &quot;&quot;))
+	re = regexp.MustCompile(&quot; &quot;)
+	fmt.Printf(&quot;%q\n&quot;,re.ReplaceAllString(&quot;foo foo foo&quot;, &quot;\t&quot;))
+}

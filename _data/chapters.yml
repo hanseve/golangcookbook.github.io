@@ -31,7 +31,7 @@
   - title: Replacing Parts of a String
     path: /chapters/strings/replacing
   - title: Expanding and Compressing Tabs
-    path: false
+    path: /chapters/strings/processing-tab
   - title: Expanding Variables in User Input
     path: false
   - title: Interpolating Functions and Expressions Within Strings
