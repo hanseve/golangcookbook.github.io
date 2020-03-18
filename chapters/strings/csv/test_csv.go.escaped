@@ -1,0 +1,29 @@
+package main
+
+import (
+	&quot;encoding/csv&quot;
+	&quot;fmt&quot;
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	s := `first_name,last_name,username
+&quot;Rob&quot;,&quot;Pike&quot;,rob
+Ken,Thompson,ken
+&quot;Robert&quot;,&quot;Griesemer&quot;,&quot;gri&quot;
+`
+	r := csv.NewReader(strings.NewReader(s))
+
+	for {
+		row, err := r.Read()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			log.Fatal(err)
+		}
+		fmt.Println(row)
+	}
+}

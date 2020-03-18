@@ -1,0 +1,13 @@
+package main
+
+import (
+	&quot;fmt&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	s := &quot; Hello world  \n\t\r&quot;
+	fmt.Printf(&quot;%q\n&quot;, s)
+	fmt.Printf(&quot;%q\n&quot;, strings.TrimRight(s, &quot; \n\t\r&quot;))
+	fmt.Printf(&quot;%q\n&quot;, strings.TrimSpace(s))
+}

@@ -5,7 +5,7 @@
   </div>
 
   <div class="output">
-    <pre><code><span class="shell">$ go run test_{{include.example}}.go</span>
+    <pre><code><span class="shell">$ go run test_{{include.example}}.go {{include.flag}}</span>
 {% include_relative test_{{ include.example }}.expected.escaped %}</code></pre>
   </div>
 </div>

@@ -1,0 +1,15 @@
+package main
+
+import (
+	&quot;fmt&quot;
+)
+
+func main() {
+	fmt.Println(&quot;Please input your firstname and lastname:&quot;)
+	var firstname, lastname string
+	fmt.Scanln(&firstname, &lastname)
+	fmt.Println(&quot;Please input your age:&quot;)
+	var age int
+	fmt.Scanf(&quot;%3d&quot;, &age)
+	fmt.Printf(&quot;Hi, I'm %s·%s, %d years old\n&quot;, firstname, lastname, age)
+}

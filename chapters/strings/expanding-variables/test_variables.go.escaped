@@ -1,0 +1,15 @@
+package main
+
+import (
+	&quot;flag&quot;
+	&quot;fmt&quot;
+)
+
+func main() {
+	var num = flag.Int(&quot;num&quot;, 0, &quot;test flag int&quot;)
+	var num2 int
+	flag.IntVar(&num2, &quot;num2&quot;, 0, &quot;test flag int&quot;)
+	flag.Parse()
+	fmt.Println(*num)
+	fmt.Println(num2)
+}

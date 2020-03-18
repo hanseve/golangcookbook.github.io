@@ -1,0 +1,23 @@
+package main
+
+import (
+	&quot;bufio&quot;
+	&quot;fmt&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	var reader = bufio.NewReader(os.Stdin)
+	fmt.Println(&quot;Please input a string:&quot;)
+	var input, err = reader.ReadString('\n');
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Printf(&quot;Your input: %s\n&quot;, input)
+
+	fmt.Println(&quot;Please input another string:&quot;)
+	scanner := bufio.NewScanner(os.Stdin)
+	for scanner.Scan()  {
+		fmt.Printf(&quot;Your input: %s\n&quot;, scanner.Text())
+	}
+}

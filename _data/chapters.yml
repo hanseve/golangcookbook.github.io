@@ -33,23 +33,23 @@
   - title: Expanding and Compressing Tabs
     path: /chapters/strings/processing-tab
   - title: Expanding Variables in User Input
-    path: false
+    path: /chapters/strings/expanding-variables
   - title: Interpolating Functions and Expressions Within Strings
     path: false
   - title: Indenting Here Documents
     path: false
   - title: Escaping Characters
-    path: false
+    path: /chapters/strings/escaping
   - title: Trimming Blanks from the Ends of a String
-    path: false
+    path: /chapters/strings/trim
   - title: Controlling Case
-    path: false
+    path: /chapters/strings/case
   - title: Properly Capitalizing a Title
     path: /chapters/strings/title
   - title: Turning an Array into a Sentence
     path: /chapters/strings/sentence
   - title: Parsing Comma-Separated Data
-    path: false
+    path: /chapters/strings/csv
 - title: Numbers
   recipes:
   - title: Representing Enums in Go
